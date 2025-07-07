@@ -20,7 +20,7 @@ export default function ContactPage() {
         mode: "onTouched",
     });
 
-    const onSubmit = async (data: ContactFormData) => {
+    const onSubmit = async () => {
         await new Promise((res) => setTimeout(res, 800));
         setIsSubmitted(true);
         reset();

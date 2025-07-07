@@ -45,7 +45,7 @@ export default function Header() {
                     </Link>
                     <Link
                         href="/contact"
-                        className={`hover:text-red-400 transition-colors ${isActive("/contact") ? "text-red-400 underline" : ""}`}
+                        className={`hover:text-red-400 transition-colors ${isActive("/contact") ? "text-red-400 " : ""}`}
                     >
                         Contact
                     </Link>
@@ -69,7 +69,7 @@ export default function Header() {
                     <li>
                         <Link
                             href="/"
-                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/") ? "text-red-400 underline" : ""}`}
+                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/") ? "text-red-400" : ""}`}
                             onClick={handleLinkClick}
                         >
                             Home
@@ -78,7 +78,7 @@ export default function Header() {
                     <li>
                         <Link
                             href="/blogs"
-                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/blogs") ? "text-red-400 underline" : ""}`}
+                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/blogs") ? "text-red-400" : ""}`}
                             onClick={handleLinkClick}
                         >
                             Blogs
@@ -87,7 +87,7 @@ export default function Header() {
                     <li>
                         <Link
                             href="/about"
-                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/about") ? "text-red-400 underline" : ""}`}
+                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/about") ? "text-red-400" : ""}`}
                             onClick={handleLinkClick}
                         >
                             About
@@ -96,7 +96,7 @@ export default function Header() {
                     <li>
                         <Link
                             href="/contact"
-                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/contact") ? "text-red-400 underline" : ""}`}
+                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/contact") ? "text-red-400" : ""}`}
                             onClick={handleLinkClick}
                         >
                             Contact

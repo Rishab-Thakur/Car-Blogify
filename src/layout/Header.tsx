@@ -77,6 +77,15 @@ export default function Header() {
                     </li>
                     <li>
                         <Link
+                            href="/"
+                            className={`hover:text-red-400 transition-colors text-lg ${isActive("/blogs") ? "text-red-400 underline" : ""}`}
+                            onClick={handleLinkClick}
+                        >
+                            Blogs
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             href="/about"
                             className={`hover:text-red-400 transition-colors text-lg ${isActive("/about") ? "text-red-400 underline" : ""}`}
                             onClick={handleLinkClick}

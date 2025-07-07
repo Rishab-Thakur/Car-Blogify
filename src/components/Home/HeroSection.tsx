@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiSend, FiChevronRight } from 'react-icons/fi';
+import { FiSend } from 'react-icons/fi';
 
 function HeroSection() {
     return (

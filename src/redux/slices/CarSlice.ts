@@ -5,7 +5,7 @@ import { CarPost } from "@/Interface/CarSliceInterface";
 interface PostsState {
   posts: CarPost[];
   loading: boolean;
-  error: string | null;
+  error: unknown | null;
 }
 
 const initialState: PostsState = {
@@ -21,8 +21,11 @@ export const fetchCarPosts = createAsyncThunk<CarPost[]>(
     try {
       const data = await fetchPosts();
       return data;
-    } catch (error: any) {
-      return rejectWithValue(error.message);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        return rejectWithValue(error.message);
+      }
+      return rejectWithValue("An unknown error occurred");
     }
   }
 );

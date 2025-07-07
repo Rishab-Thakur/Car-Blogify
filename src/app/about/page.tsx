@@ -12,19 +12,19 @@ export default function About() {
 
     const team = [
         {
-            name: 'Rishab Thakur',
-            role: 'EV Specialist',
-            description: 'Expert in electric vehicle trends, battery technology, and global EV adoption, with a focus on emerging markets and sustainability.',
+            name: "Rishab Thakur",
+            role: "EV Specialist",
+            description: "Expert in electric vehicle trends, battery technology, and global EV adoption, with a focus on emerging markets and sustainability.",
         },
         {
-            name: 'Ritesh Chauhan',
-            role: 'Automotive Technology Editor',
-            description: 'Covers software-defined vehicles, in-car connectivity, and the impact of AI on automotive innovation.',
+            name: "Ritesh Chauhan",
+            role: "Automotive Technology Editor",
+            description: "Covers software-defined vehicles, in-car connectivity, and the impact of AI on automotive innovation.",
         },
         {
-            name: 'Akshit Thakur',
-            role: 'Market Analyst',
-            description: 'Tracks global production trends, tariff impacts, and consumer buying behavior in the rapidly evolving auto industry.',
+            name: "Akshit Thakur",
+            role: "Market Analyst",
+            description: "Tracks global production trends, tariff impacts, and consumer buying behavior in the rapidly evolving auto industry.",
         },
     ];
 
